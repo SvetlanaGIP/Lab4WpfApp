@@ -32,5 +32,56 @@ namespace WpfApp1
             double resDouble=rateDollar*sumDollar;
             resSum.Text=resDouble.ToString();
         }
+        private void Button_Click1(object sender, RoutedEventArgs e)
+        {
+            double rate = Convert.ToDouble(rateEu.Text);
+            double sum = Convert.ToDouble(sumEu.Text);
+            double resDouble = rate * sum;
+            resSumEu.Text = resDouble.ToString();
+        }
+
+        private void Button_Click2(object sender, RoutedEventArgs e)
+        {
+            double rate = Convert.ToDouble(rateGr.Text);
+            double sum = Convert.ToDouble(sumGr.Text);
+            double resDouble = rate * sum;
+            resSumGr.Text = resDouble.ToString();
+        }
+
+        private void Button_Click3(object sender, RoutedEventArgs e)
+        {
+            double rate = Convert.ToDouble(rateAr.Text);
+            double sum = Convert.ToDouble(sumAr.Text);
+            double resDouble = rate * sum;
+            resSumAr.Text = resDouble.ToString();
+        }
+
+        private void Button_Click4(object sender, RoutedEventArgs e)
+        {
+            double rate = Convert.ToDouble(quantity.Text);
+            double resDouble = rate / 39.37;
+            resD.Text = resDouble.ToString();
+        }
+
+        private void Button_Click5(object sender, RoutedEventArgs e)
+        {
+            double rate = Convert.ToDouble(quantityF.Text);
+            double resDouble = rate / 3.28;
+            resF.Text = resDouble.ToString();
+        }
+
+        private void Button_Click6(object sender, RoutedEventArgs e)
+        {
+            double rate = Convert.ToDouble(quantityM.Text);
+            double resDouble = rate * 1609.34;
+            resM.Text = resDouble.ToString();
+        }
+
+        private void Button_Click7(object sender, RoutedEventArgs e)
+        {
+            double rate = Convert.ToDouble(quantityV.Text);
+            double resDouble = rate * 1066.8;
+            resV.Text = resDouble.ToString();
+        }
     }
 }
